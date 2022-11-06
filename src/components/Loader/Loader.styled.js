@@ -8,4 +8,5 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 9999;
+  background: rgba(0, 0, 0, 0.8);
 `
