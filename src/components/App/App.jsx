@@ -51,9 +51,12 @@ export const App = () => {
   };
   
   const onFormSubmit = searchNameImages => {
-    setSearchQuery(searchNameImages.toString());
-    setPage(1);
-    setImages([]);
+    if (searchNameImages !== searchQuery) {
+      setSearchQuery(searchNameImages.toString());
+      setPage(1);
+      setImages([]);
+    }
+    
   };
 
   const onButtonClick = () => {   
